@@ -7,11 +7,8 @@ public class Lv2 {
 
     public static boolean solution(String[] phone_book) {
 
-//        HashSet<String> phoneBookSet = new HashSet<>();
-//
-//        for(String phoneNumber : phone_book) {
-//            phoneBookSet.add(phoneNumber);
-//        }
+        /* type 1 : HashSet */
+//        HashSet<String> phoneBookSet = new HashSet<>(Arrays.asList(phone_book));
 //
 //        for(String phoneNumber : phoneBookSet) {
 //            for (int i = 1; i < phoneNumber.length(); i++) {
@@ -23,6 +20,8 @@ public class Lv2 {
 //
 //        return true;
 
+
+        /* type 2 : Array */
         Arrays.sort(phone_book);
 
         for(int i=0; i<phone_book.length-1; i++) {

@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 public class Lv1 {
     public static String solution(String[] participant, String[] completion) {
+
+        /* type 1 : Array */
 //        Arrays.sort(participant);
 //        Arrays.sort(completion);
 //
@@ -18,6 +20,7 @@ public class Lv1 {
 //        return participant[i];
 
 
+        /* type 2 : HashMap */
         HashMap<String, Integer> participantHash = new HashMap<>();
 
         for(String player : participant) {
