@@ -1,5 +1,6 @@
 package kr.co.kyungsik.codingtest.hash;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -24,5 +25,19 @@ public class DoNotCompletePlayer {
 			}
 		}
 		return answer;
+	}
+
+	public String arraySolution(String[] participant, String[] completion){
+		Arrays.sort(participant);
+		Arrays.sort(completion);
+
+		int i;
+		for (i = 0; i < completion.length; i++) {
+			if (!participant[i].equals(completion[i])) {
+				return participant[i];
+			}
+		}
+
+		return participant[i];
 	}
 }
